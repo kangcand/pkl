@@ -15,20 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('api', function () {
-    $a = ['dadang', 'abdul', 'usep'];
-    $response = [
-        'success' => true,
-        'data'  => $a,
-        'message' => 'berhasil'
-    ];
-    return response()->json($response, 200);
-});
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
