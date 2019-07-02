@@ -24,3 +24,7 @@ Route::get('api', function () {
     ];
     return response()->json($response, 200);
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
