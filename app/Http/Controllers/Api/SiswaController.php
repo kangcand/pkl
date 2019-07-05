@@ -11,8 +11,6 @@ class SiswaController extends Controller
     public function index()
     {
         $siswa = Siswa::all();
-
-
         $response = [
             'success' => true,
             'data' => $siswa,
