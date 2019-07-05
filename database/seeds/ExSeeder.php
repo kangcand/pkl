@@ -20,7 +20,7 @@ class ExSeeder extends Seeder
             'password' => bcrypt('rahasia')
         ]);
 
-        $faker = Faker\Factory::create('id_ID');
+        $faker = Faker::create('id_ID');
         for ($i = 0; $i < 5; $i++) {
             $gender = $faker->randomElement(['male', 'female']);
             $siswa = new Siswa;
