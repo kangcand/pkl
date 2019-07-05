@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use App\User;
 use App\Siswa;
-// use Faker\Calculator;
+use Faker\Factory as Faker;
 
 class ExSeeder extends Seeder
 {
